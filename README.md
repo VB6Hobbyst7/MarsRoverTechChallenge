@@ -28,4 +28,4 @@ Rules
 * Each grid thats not been photographed that the rover moves through will be photographed.    
 * Rover can not move out of the plateau, if Rover reachs the edge of the plateau and the next command tells the rover to move out the rover will stop and ignore the rest of the commands.
 * Two rovers can not be in the same grid at the same time, if a rover is commanded to go into a grid where another rover is currently, the rover will stop and ignore the rest of the commands
-* Also posible that a grid can not be accessed by a rover, due to moutains, or holes
+* Also posible that a grid can not be accessed by a rover, due to moutains, or holes, if a rover is commanded to go into that grid it will stop and ignore the rest of the commands
