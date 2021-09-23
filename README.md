@@ -21,3 +21,11 @@ The rest of the input is information pertaining to the rovers that have been dep
 The position is made up of two integers and a letter separated by spaces, corresponding to the x and y co-ordinates and the rover's orientation.
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
+
+Rules
+* All rovers constantly report to the command unit that tracks thier position and the state of the grid.
+* Per session each grid will only have one 360 photo taken, this is to minimise upload size and eliminate duplicate images.
+* Each grid thats not been photographed that the rover moves through will be photographed.    
+* Rover can not move out of the plateau, if Rover reachs the edge of the plateau and the next command tells the rover to move out the rover will stop and ignore the rest of the commands.
+* Two rovers can not be in the same grid at the same time, if a rover is commanded to go into a grid where another rover is currently, the rover will stop and ignore the rest of the commands
+* Also posible that a grid can not be accessed by a rover, due to moutains, or holes
