@@ -34,5 +34,18 @@ Rules
 * Once all rovers have completed the commands, the command center will send the information back to earth
 ![Sat](https://user-images.githubusercontent.com/79660088/134824075-5d98fe6a-1fbd-4817-824a-e43cc49be111.PNG)
 
-Installation
-Step 1: 
+Run Application on windows machine
+
+Step 1: Go to the Github link, click on Code and then click on download zip.
+![Download Zip](https://user-images.githubusercontent.com/79660088/134824813-188a69e8-c29a-4dda-90fb-14ebde1460b9.PNG)
+
+Step 2: Unzip the document into a folder
+Step 3: Open into folder MarsRoverTechChallenge-main -> MarsRoverTechChallenge -> bin -> Debug -> net5.0-windows
+Step 4: click on MarsRoverTechChallenge.exe to execute the code
+
+Using the Control Interface
+* The top textbox is the command interface and will be preloaded with the default Input
+* Click on Send to send the commands to the Command Center
+* The bottom textbox is the result 
+![Commands](https://user-images.githubusercontent.com/79660088/134825089-6d8472b5-fb2a-4550-a2c9-cbee1db83196.PNG)
+
