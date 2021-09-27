@@ -49,3 +49,41 @@ Using the Control Interface
 * The bottom textbox is the result 
 ![Commands](https://user-images.githubusercontent.com/79660088/134825089-6d8472b5-fb2a-4550-a2c9-cbee1db83196.PNG)
 
+Changes to how communications are sent
+I'd prever to send the communication from earth to the command center as an XML file, allowing less chance of the information been miss read.
+Please find below communication example:
+
+<CommandCenter>
+  <Security>
+	<Key>GHSK677JJSHGSUYUTYE777886NHJ</Key>
+	<Secret>HHJJSIIIKK7766545DFGGSVVSNNHYHYHYS776576GFFFDSJSJHGBBCJGS</Secret>
+  </Security>
+  <Grid>
+	<Size>
+		<x>5</x>
+		<y>5</y>
+	</Size>
+	<RestrictedGrids> 
+		<Coordinates>
+			<Coordinate>
+				<x>1</x>
+				<y>1</y>
+			</Coordinate>
+		</Coordinates>
+	</RestrictedGrids>
+  </Grid> 
+  <Rovers>
+	  <Rover>
+      <x>2</x>
+      <y>3</y>
+		  <Direction>E</Direction>
+		  <Commands>LMLMLMLMM</Commands>
+	  </Rover>
+	  <Rover>
+      <x>0</x>
+      <y>0</y>
+      <Direction>N</Direction>
+      <Commands>MMMMM</Commands>
+	  </Rover>
+  </Rovers>  
+</CommandCenter>
