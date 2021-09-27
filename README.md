@@ -50,6 +50,7 @@ Step 4: click on MarsRoverTechChallenge.exe to execute the code
 ![Commands](https://user-images.githubusercontent.com/79660088/134825089-6d8472b5-fb2a-4550-a2c9-cbee1db83196.PNG)
 
 <b>Changes to how communications are sent</b>
+
 I'd prever to send the communication from earth to the command center as an XML file, allowing less chance of the information been miss read.
 Please find below communication example:
 
