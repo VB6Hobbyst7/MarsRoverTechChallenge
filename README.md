@@ -12,7 +12,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-Input:
+<b>Input:</b>
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -22,7 +22,7 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-Rules
+<b>Rules</b>
 * Commands are sent from earth via satellites
 * All rovers constantly report to the command center which is a satellite in orbit of Mars that tracks thier position and the state of the grid.
 ![Communication](https://user-images.githubusercontent.com/79660088/134823709-b18da344-b545-4968-958a-16582113e4ab.PNG)
@@ -34,7 +34,7 @@ Rules
 * Once all rovers have completed the commands, the command center will send the information back to earth
 ![Sat](https://user-images.githubusercontent.com/79660088/134824075-5d98fe6a-1fbd-4817-824a-e43cc49be111.PNG)
 
-Run Application on windows machine
+<b>Run Application on windows machine</b>
 
 Step 1: Go to the Github link, click on Code and then click on download zip.
 ![Download Zip](https://user-images.githubusercontent.com/79660088/134824813-188a69e8-c29a-4dda-90fb-14ebde1460b9.PNG)
@@ -43,47 +43,47 @@ Step 2: Unzip the document into a folder
 Step 3: Open into folder MarsRoverTechChallenge-main -> MarsRoverTechChallenge -> bin -> Debug -> net5.0-windows
 Step 4: click on MarsRoverTechChallenge.exe to execute the code
 
-Using the Control Interface
+<b>Using the Control Interface</b>
 * The top textbox is the command interface and will be preloaded with the default Input
 * Click on Send to send the commands to the Command Center
 * The bottom textbox is the result 
 ![Commands](https://user-images.githubusercontent.com/79660088/134825089-6d8472b5-fb2a-4550-a2c9-cbee1db83196.PNG)
 
-Changes to how communications are sent
+<b>Changes to how communications are sent</b>
 I'd prever to send the communication from earth to the command center as an XML file, allowing less chance of the information been miss read.
 Please find below communication example:
 
-<CommandCenter>
-  <Security>
-	<Key>GHSK677JJSHGSUYUTYE777886NHJ</Key>
-	<Secret>HHJJSIIIKK7766545DFGGSVVSNNHYHYHYS776576GFFFDSJSJHGBBCJGS</Secret>
-  </Security>
-  <Grid>
-	<Size>
-		<x>5</x>
-		<y>5</y>
-	</Size>
-	<RestrictedGrids> 
-		<Coordinates>
-			<Coordinate>
-				<x>1</x>
-				<y>1</y>
-			</Coordinate>
-		</Coordinates>
-	</RestrictedGrids>
-  </Grid> 
-  <Rovers>
-	  <Rover>
-      <x>2</x>
-      <y>3</y>
-		  <Direction>E</Direction>
-		  <Commands>LMLMLMLMM</Commands>
-	  </Rover>
-	  <Rover>
-      <x>0</x>
-      <y>0</y>
-      <Direction>N</Direction>
-      <Commands>MMMMM</Commands>
-	  </Rover>
-  </Rovers>  
-</CommandCenter>
+&lt;CommandCenter&gt;
+  &lt;Security&gt;
+	&lt;Key&gt;GHSK677JJSHGSUYUTYE777886NHJ&lt;/Key&gt;
+	&lt;Secret&gt;HHJJSIIIKK7766545DFGGSVVSNNHYHYHYS776576GFFFDSJSJHGBBCJGS&lt;/Secret&gt;
+  &lt;/Security&gt;
+  &lt;Grid&gt;
+	&lt;Size&gt;
+		&lt;x&gt;5&lt;/x&gt;
+		&lt;y&gt;5&lt;/y&gt;
+	&lt;/Size&gt;
+	&lt;Restricted&gt; 
+		&lt;Coordinates&gt;
+			&lt;Coordinate&gt;
+				&lt;x&gt;1&lt;/x&gt;
+				&lt;y&gt;1&lt;/y&gt;
+			&lt;/Coordinate&gt;
+		&lt;/Coordinates&gt;
+	&lt;/Restricted&gt;
+  &lt;/Grid&gt; 
+  &lt;Rovers&gt;
+	  &lt;Rover&gt;
+		&lt;x&gt;2&lt;/x&gt;
+		&lt;y&gt;3&lt;/y&gt;
+		&lt;Direction&gt;E&lt;/Direction&gt;
+		&lt;Commands&gt;LMLMLMLMM&lt;/Commands&gt;
+	  &lt;/Rover&gt;
+	   &lt;Rover&gt;
+		&lt;x&gt;0&lt;/x&gt;
+		&lt;y&gt;0&lt;/y&gt;
+		&lt;Direction&gt;N&lt;/Direction&gt;
+		&lt;Commands&gt;MMMMM&lt;/Commands&gt;
+	  &lt;/Rover&gt;
+  &lt;/Rovers&gt;  
+&lt;/CommandCenter&gt;
