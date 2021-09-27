@@ -113,7 +113,8 @@ Namespace Model
                     End Try
 
                     If isValid Then
-                        Me.Plateau(.X, .Y).Rovers.Add(Rover)
+                        'Add the rover to the grid
+                        Me.Plateau(.X, .Y).Rover = Rover
                         Me.Rovers.Add(Rover)
                     End If
                 End With

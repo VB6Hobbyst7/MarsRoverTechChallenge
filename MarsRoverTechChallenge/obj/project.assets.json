@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyProject\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge.vbproj",
+      "projectUniqueName": "C:\\Work\\Projects\\Spaces\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge.vbproj",
       "projectName": "MarsRoverTechChallenge",
-      "projectPath": "C:\\MyProject\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge.vbproj",
+      "projectPath": "C:\\Work\\Projects\\Spaces\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge.vbproj",
       "packagesPath": "C:\\Users\\Cavan\\.nuget\\packages\\",
-      "outputPath": "C:\\MyProject\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\obj\\",
+      "outputPath": "C:\\Work\\Projects\\Spaces\\MarsRoverTechChallenge\\MarsRoverTechChallenge\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cavan\\AppData\\Roaming\\NuGet\\NuGet.Config",
